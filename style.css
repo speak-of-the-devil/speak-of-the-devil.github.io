@@ -1,0 +1,216 @@
+
+    /* Reset default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Full-screen video background */
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Center the content */
+    .centered-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1;
+      width: 100%;
+    }
+
+    /* Container with glassmorphism effect */
+    .glass-container {
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+      box-shadow: 8px 4px 4px rgba(176, 190, 197, 0.32);
+      font-family: "SD Dystopian"; /* Set font */
+    }
+
+    /* Input form styles */
+    .form-container {
+      margin-bottom: 20px;
+    }
+
+    /* Form input styles */
+    .glass-container input[type="text"],
+    .glass-container input[type="email"],
+    .glass-container input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white;
+    }
+
+    /* Form placeholder text color */
+    .glass-container ::placeholder {
+      color: white;
+    }
+
+    /* Form title color */
+    .glass-container h2,
+    .glass-container form label {
+      color: white;
+      margin-bottom: 20px; /* Add space below title */
+    }
+
+    /* Button styles */
+    .glass-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.6); /* Initial button color */
+      color: white; /* Initial button text color */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease; /* Add transition effect */
+    }
+
+    /* Change button color and text color on hover */
+    .glass-container button:hover {
+      background-color: white; /* Change background color on hover */
+      color: black; /* Change text color on hover */
+    }
+
+    /* Horizontal line style */
+    .glass-container hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: gray;
+    }
+
+    /* Image styles */
+    img {
+      max-width: 100%;
+    }
+
+    /* Image at the bottom */
+    .bottom-image {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto; /* Center the image horizontally with margin */
+    }
+
+    /* Media queries for responsiveness */
+    @media only screen and (min-width: 320px)  {
+      /* Adjust image sizes for small screens */
+      img {
+        margin-top: 134px;
+        padding: 10px;
+        width: 100%;
+      }
+      .glass-container {
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 400px;
+      margin-left: 11px;
+      margin-right: 20px;
+      box-shadow: 8px 4px 4px rgba(176, 190, 197, 0.32);
+      font-family: "SD Dystopian"; /* Set font */
+    }
+    
+    }
+
+    @media only screen and (min-width: 375px)
+    {
+        img {
+        margin-top: 225px;
+        padding: 10px;
+        width: 100%;
+      }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      /* Adjust image sizes for medium screens */
+      img {
+        margin-top: 260px;
+        width: 80%;
+      }
+      .glass-container {
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 8px 4px 4px rgba(176, 190, 197, 0.32);
+      font-family: "SD Dystopian"; /* Set font */
+    }
+}
+
+    @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+      /* Adjust image sizes for large screens */
+      img {
+        margin-top: 40px;
+        margin-bottom: 7px;
+        width: 60%;
+      }
+
+      .glass-container {
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 8px 4px 4px rgba(176, 190, 197, 0.32);
+      font-family: "SD Dystopian"; /* Set font */
+    }
+    }
+
+    @media only screen and (min-width: 1280px) {
+      /* Adjust image sizes for extra-large screens */
+      img {
+        width: 50%;
+      }
+    }
+    @media only screen and (min-width : 1440px) {
+        img {
+        margin-top: 40px;
+        margin-bottom: 7px;
+        width: 60%;
+      }
+
+      .glass-container {
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 8px 4px 4px rgba(176, 190, 197, 0.32);
+      font-family: "SD Dystopian"; /* Set font */
+    }
+        
+    }
+    @media only screen and (min-width : 2560){
+        .glass-container {
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 8px 4px 4px rgba(176, 190, 197, 0.32);
+      font-family: "SD Dystopian"; /* Set font */
+    }
+    }
+  
